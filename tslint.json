@@ -4,18 +4,8 @@
         "node_modules/codelyzer"
     ],
     "rules": {
-        "directive-selector": [
-            true,
-            "attribute",
-            [
-                "dir-prefix1",
-                "dir-prefix2"
-            ],
-            "camelCase"
-        ],
         "interface-name": false,
         "max-classes-per-file": false,
-        "no-input-rename": true,
         "use-view-encapsulation": false,
         "use-life-cycle-interface": true,
         "use-pipe-transform-interface": true,
