@@ -2,6 +2,7 @@
 
 const shell = require('shelljs');
 const chalk = require('chalk');
+const path = require('path');
 
 const PACKAGE = `ng2-completer`;
 const NPM_DIR = `dist/lib`;
@@ -69,5 +70,8 @@ shell.rm(`-Rf`, `${NPM_DIR}/src/**/*.js`);
 shell.rm(`-Rf`, `${NPM_DIR}/src/**/*.js.map`);
 
 shell.cp(`-Rf`, [`package.json`, `LICENSE.md`, `README.md`], `${NPM_DIR}`);
+
+const packageJsonPath = path.join(__dirname, NPM_DIR, 'package.json');
+shell.sed('-i', /^.+postinstall.+$/, '', packageJsonPath);
 
 shell.echo(chalk.green(`End building`));
