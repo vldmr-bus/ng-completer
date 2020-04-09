@@ -34,6 +34,7 @@
         "annotateForClosureCompiler": false,
         "strictMetadataEmit": true,
         "flatModuleOutFile": "ng2-completer.js",
-        "flatModuleId": "ng2-completer"
+        "flatModuleId": "ng2-completer",
+        "enableIvy": false
     }
 }
