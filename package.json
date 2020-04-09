@@ -1,6 +1,6 @@
 {
   "name": "ng2-completer",
-  "version": "9.0.0",
+  "version": "9.0.1",
   "description": "angular autocomplete/typeahead component",
   "main": "./bundles/ng2-completer.umd.js",
   "module": "./esm5/ng2-completer.js",
