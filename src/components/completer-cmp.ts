@@ -125,7 +125,7 @@ const COMPLETER_CONTROL_VALUE_ACCESSOR = {
     `],
     providers: [COMPLETER_CONTROL_VALUE_ACCESSOR]
 })
-export class CompleterCmp implements OnInit, ControlValueAccessor, AfterViewChecked, AfterViewInit {
+export class CompleterCmp implements ControlValueAccessor, AfterViewChecked, AfterViewInit {
     @Input() public dataService: CompleterData | undefined;
     @Input() public inputName = "";
     @Input() public inputId: string = "";
@@ -202,6 +202,21 @@ export class CompleterCmp implements OnInit, ControlValueAccessor, AfterViewChec
         if (this.autofocus) {
             this._focus = true;
         }
+        
+        if (!this.completer) {
+            return;
+        }
+
+        this.completer.selected.subscribe((item: CompleterItem) => {
+            this.selected.emit(item);
+        });
+        this.completer.highlighted.subscribe((item: CompleterItem) => {
+            this.highlighted.emit(item);
+        });
+        this.completer.opened.subscribe((isOpen: boolean) => {
+            this._open = isOpen;
+            this.opened.emit(isOpen);
+        });
     }
 
     public ngAfterViewChecked(): void {
@@ -265,24 +280,6 @@ export class CompleterCmp implements OnInit, ControlValueAccessor, AfterViewChec
             this._textSearching = text;
             this.displaySearching = !!this._textSearching && this._textSearching !== "false";
         }
-    }
-
-    public ngOnInit() {
-
-        if (!this.completer) {
-            return;
-        }
-
-        this.completer.selected.subscribe((item: CompleterItem) => {
-            this.selected.emit(item);
-        });
-        this.completer.highlighted.subscribe((item: CompleterItem) => {
-            this.highlighted.emit(item);
-        });
-        this.completer.opened.subscribe((isOpen: boolean) => {
-            this._open = isOpen;
-            this.opened.emit(isOpen);
-        });
     }
 
     public onBlur() {
