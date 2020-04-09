@@ -1,9 +1,11 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
-## 9.0.0(2020-03-03)
+## 9.0.1(2020-04-09)
  - Upgrade to angular 9
  - Follow angular version numbers
+ - Disable Ivy PR #448
+ - 
 
 ## 3.0.3 (2019-11-09)
  - Removed rxjs-compat dependency #435

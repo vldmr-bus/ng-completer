@@ -221,7 +221,7 @@ export class CtrInput {
 
     private restoreSearchValue() {
         if (this.fillHighlighted) {
-            if (this._displayStr != this.searchStr) {
+            if (this._displayStr !== this.searchStr) {
                 this._displayStr = this.searchStr;
                 this.ngModelChange.emit(this.searchStr);
             }
