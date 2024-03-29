@@ -14,7 +14,7 @@ import {
   CtrCompleter,
   CompleterData,
   CompleterItem
-} from "../src/ng2-completer";
+} from "../src/ng-completer";
 import {
   MAX_CHARS,
   MIN_SEARCH_LENGTH,
@@ -33,7 +33,7 @@ const COMPLETER_CONTROL_VALUE_ACCESSOR = {
 };
 
 @Component({
-  selector: "ng2-completer-md",
+  selector: "ng-completer-md",
   templateUrl: "./completer-cmp-md.html",
   styleUrls: ["./completer-cmp-md.css"],
   providers: [COMPLETER_CONTROL_VALUE_ACCESSOR]

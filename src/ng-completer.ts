@@ -16,4 +16,4 @@ export { CompleterItem } from "./components/completer-item";
 export { CompleterListItemCmp } from "./components/completer-list-item-cmp";
 export { CompleterCmp } from "./components/completer-cmp";
 
-export { Ng2CompleterModule } from './modules/ng2-completer.module';
+export { NgCompleterModule as NgCompleterModule } from './modules/ng-completer.module';

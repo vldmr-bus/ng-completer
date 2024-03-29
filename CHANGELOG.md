@@ -84,7 +84,7 @@ Library structure and build now uses [angular-library-starter](https://github.co
 ### Fixed bugs
 - Dropdown is not opened when using backspace after a value is selected #261
 - On text paste the search doesn't get triggered #265
-- "flase" should be "false" on line 202 @ ng2-completer/demo/native-cmp.html #271
+- "flase" should be "false" on line 202 @ ng-completer/demo/native-cmp.html #271
 - Demo not working on Android Chrome 59 #270
 
 ## 1.5.2 (2017-06-16)
@@ -143,16 +143,16 @@ Library structure and build now uses [angular-library-starter](https://github.co
 - Demo redo
 - No link to Github in demo #133
 - added focus() method to completer component #152
-- Add inputId property to ng2-completer component (analogy to existing inputName property) #128
+- Add inputId property to ng-completer component (analogy to existing inputName property) #128
 
 ### Fixed bugs
 - Relax peer dependencies to support Angular 4.0 #184
-- ng2-completer closes when scrollbar is clicked on IE browser #158
+- ng-completer closes when scrollbar is clicked on IE browser #158
 
 ## 1.2.1 (2017-03-18)
 
 ### Fixed bugs
-- Can't bind to 'selected' since it isn't a known property of 'ng2-completer'. #155
+- Can't bind to 'selected' since it isn't a known property of 'ng-completer'. #155
 - Autofocus does not work. #150
 
 ## 1.2.0 (2017-02-26)
@@ -174,7 +174,7 @@ Library structure and build now uses [angular-library-starter](https://github.co
 
 ### Fixed bugs
 - (selected) not called when text is highlighted and then deleted #121
-- Clicking in a pre-filled ng2-completer with [overrideSuggested]="true", then immediately clicking another element clears the ngModel to a blank string #122
+- Clicking in a pre-filled ng-completer with [overrideSuggested]="true", then immediately clicking another element clears the ngModel to a blank string #122
 - required not working when intializing ngModel with a value #126
 - First item is selected on enter #134
 
@@ -184,7 +184,7 @@ Library structure and build now uses [angular-library-starter](https://github.co
 - Input box doesn't have a type! #73
 - new ctr-input property 'fillHighlighted' that controls setting of input value when item is highlighted #123 (by @mdudek)
 - Cannot access entered text when not selected from list #72
-- ng2-completer input autofocus? #125
+- ng-completer input autofocus? #125
 - Set `max-height` of dropdown in demo
 
 ### Fixed bugs

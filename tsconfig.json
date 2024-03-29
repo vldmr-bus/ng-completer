@@ -12,12 +12,15 @@
         "target": "es5",
         "skipLibCheck": true,
         "lib": [
-            "es2015",
+            "es2020",
             "dom"
         ],
         "typeRoots": [
             "./node_modules/@types/"
         ]
+    },
+    "angularCompilerOptions": {
+        "strictTemplates": true
     },
     "exclude": [
         "node_modules"

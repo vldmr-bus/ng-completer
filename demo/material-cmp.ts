@@ -1,7 +1,7 @@
 "use strict";
 import { Component } from "@angular/core";
 
-import { CompleterService, CompleterData } from "../src/ng2-completer";
+import { CompleterService, CompleterData } from "../src/ng-completer";
 
 @Component({
     // tslint:disable-next-line: component-selector
